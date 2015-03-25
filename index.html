@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>運用 Tumblr 打造作品集網頁</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="運用 Tumblr 打造作品集網頁">
+    <meta name="author" content="吳自勝">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,7 +15,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/style.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,335 +42,430 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
+					<h1>前端社群工作坊</h1>
+					<h3>運用 Tumblr 打造作品集網頁</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
+						<small>Created by <a href="http://fb.me/tzusheng">吳自勝</a></small>
 					</p>
 				</section>
 
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<section>
+						<h2>為什麼選擇 Tumblr</h2>
+						<p>
+							<ul>
+								<li>只要有瀏覽器不用管開發環境</li>
+								<li>不用煩惱伺服器架在哪</li>
+								<li>改到認不出來是 Tumblr 都可以</li>
+							</ul>
+						</p>
+						<p>還沒有申請 Tumblr 的趕快去申請</p>
+					</section>
+					<section>
+						<h3><a target="_blank" href="http://staff.tumblr.com/">一般</a> Tumblr 頁面長這樣</h3>
+						<img src="images/staff.png" alt="tumblr staff">
+					</section>
+					<section>
+						<h3><a target="_blank" href="http://f2e-workshop.tumblr.com/">這個網站</a>也是放在 Tumblr 上喔</h3>
+						<img src="images/website.png" alt="website">
+					</section>
 				</section>
 
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Tumblr 基本操作</h2>
+						<img src="images/customize-btn.png" alt="customize">
+						<p>修改主題從進入 Customize 開始</p>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Edit HTML 進入修改主題</h2>
+						<p style="width: 30%; display: inline-block"><img src="images/sidebar.png" alt="sidebar"></p>	
+						<p style="width: 50%; display: inline-block"><img src="images/editor.png" alt="editor"></p>
 					</section>
 					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
+						<h2>Theme Assets 存放檔案</h2>
 						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+							<img src="images/theme-assets.png" alt="theme assets">
 						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
+					<section>
+						<h2>先找一個自己喜歡的樣板</h2>
+						<ul>
+							<li><a target="_blank" href="http://startbootstrap.com/">Start Bootstrap</a></li>
+							<li><a target="_blank" href="http://templated.co/">TEMPLATED</a></li>
+							<li><a target="_blank" href="http://html5up.net/">HTML5 UP</a></li>
+							<li><a target="_blank" href="http://themeforest.net/">themeforest</a></li>
+							<li><a target="_blank" href="https://www.tumblr.com/themes/">Tumblr Theme</a></li>
+						</ul>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
 				</section>
 
 				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+					<section>
+						<h2>使用 <a href="http://startbootstrap.com/template-overviews/agency/">Agency</a> 來修改</h2>
+						<p><img src="http://startbootstrap.com/assets/img/templates/agency.jpg" alt="Agency"></p>
+					</section>
+					<section>
+						<h2>先就來看看引入的 CSS</h2>
+						<img src="images/import-css.png" alt="引入 CSS">
+						<p>引入外部 CSS 的方法</p>
+					</section>
+					<section>
+						<h2>上傳該引入的檔案</h2>
+						<img style="width: 60%" src="images/upload-files.png" alt="上傳檔案">
+						<p>上傳後就可以得到在 Tumblr 上的檔案位址</p>
+						<img src="images/google-font.png" alt="google font cdn">
+						<p>Google Font 是網路上的絕對位址，直接引入</p>
+					</section>
+					<section>
+						<h2><a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a></h2>	
+						<p>把 ICON 變成字型來用</p>
+						<p>因為要引入五種不同的字型檔，<br>上傳到 Tumblr 有路徑問題要解決。</p>
+						<p>直接都引入 cdn 就好了</p>
+						<img src="images/font-awesome-cdn.png" alt="font-awesome">
+					</section>
+					<section>
+						<h2>再來看看運用到的 JavaScript</h2>
+						<img src="images/import-js.png" alt="import JS">
+					</section>
+					<section>
+						<h2>上傳 Theme Assets 引入</h2>
+						<img src="images/tumblr-css.png" alt="tumblr-css">
+						<img src="images/tumblr-js.png" alt="tumblr-js">
+					</section>
+					<section>
+						<h2>可以開始複製貼上了嗎？</h2>
+						<p>變數 {Varialble}</p>
+						<p>區塊 {block}{/block}</p>
+						<ul>
+							<li>{block:IndexPage} {/block:IndexPage} - 只在首頁顯示</li>
+							<li>{block:PermalinkPage} {/block:PermalinkPage} - 只在文章永久頁面顯示</li>
+						</ul>
+					</section>
+					<section>
+						<h2>動手吧</h2>
+						<p>將 &ltbody&gt&lt/body&gt 之間的程式碼貼到 Tumblr 上，要用 {block:IndexPage} {/block:IndexPage} 包起來</p>	
+					</section>
+				</section>
 
-    var nodes = document.querySelectorAll( selector );
+				<section>
+					<section>
+						<h2>事情當然不是只有複製貼上</h2>
+						<p>
+							不然我們還開課幹麻
+						</p>
+					</section>
+					<section>
+						<h2>狀況一</h2>
+						<p>左上角有原先主題的 menu 按鈕</p>
+						<img src="images/header-menu.png" alt="">
+					</section>
+					<section>
+						<h2>解決方案</h2>
+						<p>把原先主題的 html 註解掉</p>
+						<img style="width: 70%" src="images/header-html.png" alt="">
+						<p>選取起來按 Command + / (Ctrl + /)</p>
+					</section>
+					<section>
+						<h2>狀況二</h2>
+						<p>手機上顯示還是 Tumblr</p>
+						<img style="width: 30%" src="images/mobile-header.png" alt="">
+					</section>
+					<section>
+						<h2>解決方案</h2>
+						<p>進入進階設定關閉使用手機版主題</p>
+						<img style="width: 40%" src="images/default-mobile-theme.png" alt="">
+					</section>
+					<section>
+						<h2>狀況三</h2>
+						<p>頁首圖沒有出來</p>
+						<img style="width: 80%" src="images/no-background.png" alt="">
+					</section>
+					<section>
+						<h2>解決方案</h2>
+						<p>打開 Developer Tools 看個究竟</p>
+						<p>Command + Option + I (windows F12)</p>
+						<img style="width: 70%" src="images/background-image.png" alt="">
+						<p>發現是使用 background-image</p>
+					</section>
+					<section>
+						<h2>解決方案</h2>
+						<p>上傳背景圖至 Theme Assets</p>
+						<p>在 &ltstyle&gt&lt/style&gt 之間撰寫 CSS 覆蓋屬性</p>
+						<img style="width: 60%" src="images/background-image.png" alt="">
+						<img style="width: 60%" src="images/header-bg.png" alt="">
+					</section>
+					<section>
+						<h2>狀況四</h2>
+						<p>超連結出現底線</p>
+						<img src="images/text-decoration.png" alt="">
+						<p>CSS text-decoration: none</p>
+						<img src="images/text-decoration-none.png" alt="">
+					</section>
+					<section>
+						<h2>還有疑難雜症現在提出來吧</h2>
+					</section>
+				</section>
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+				<section>
+					<section>
+						<h2>服務項目修改</h2>
+						<img src="images/services.png" alt="">
+					</section>
+					<section>
+						<h2>修改 ICON</h2>
+						<p>使用 <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">Font Awesome</a> - <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/examples/">Stacked Icons</a></p>
+						<img src="images/stacked-icon.png" alt="">
+					</section>
+					<section>
+						<h2>修改欄數</h2>
+						<p>使用 <a target="_blank" href="http://getbootstrap.com/css/#grid">Bootstrap Grid</a></p>
+						<img style="width: 80%" src="images/bootstrap-grid.png" alt="">
+					</section>
+					<section>
+						<h2>從三欄修改至兩欄</h2>
+						<p>總共有 12 個 Columns</p>
+						<p>改成兩欄就把 12 除 2，一欄有 6 Columns </p>
+						<pre>
+							<code>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+							</code>
+						</pre>
+						<pre>
+							<code>
+<div class="row">
+  <div class="col-sm-6">.col-sm-6</div>
+  <div class="col-sm-6">.col-sm-6</div>
+</div>
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2>修改 ICON 顏色</h2>
+						<p>顏色是由 .text-primary 來控制</p>
+						<img src="images/icon-color.png" alt="">
+					</section>
+					<section>
+						<h2>動手時間</h2>
+					</section>
+				</section>
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
+				<section>
+					<section>
+						<h2>作品集修改</h2>
+						<img src="images/portfolio.png" alt="">
+					</section>
+					<section>
+						<h2>作品集的數量</h2>
+						<p>依照 Grid System 12 Columns，<br>作品集數量一定要可以整除 12 。</p>
+						<p>2, 3, 4, 6 都可以，5 個就是來『亂』的</p>
+					</section>
+					<section>
+						<h2><a target="_blank" href="http://getbootstrap.com/javascript/#modals">Bootstrap Modal</a></h2>
+						<pre><code>
+<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+  <div class="portfolio-hover">
+    <div class="portfolio-hover-content">
+      <i class="fa fa-plus fa-3x"></i>
+    </div>
+  </div>
+  <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+</a>
+						</code></pre>
+						<p>觸發 Modal 按鈕</p>
+					</section>
+					<section>
+						<h2>Modal</h2>
+						<p>modal</p>
+						<pre><code>
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true"></div>
+						</code></pre>
+						<p>關閉按鈕</p>
+						<pre><code>
+<div class="close-modal" data-dismiss="modal">
+    <div class="lr">
+        <div class="rl">
+        </div>
+    </div>
+</div>
+<button type="button" class="btn btn-primary" data-dismiss="modal">
+	<i class="fa fa-times"></i> Close Project
+</button>
+						</code></pre>
+					</section>
+					<section>
+						<h2>動手時間</h2>
+						<p>如果有時間再教如何把 Tumblr 文章改成 Portfolio</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>時間軸修改</h2>
+						<img style="width: 80%" src="images/timeline.png" alt="">
+					</section>
+					<section>
+						<h2>靠左還是靠右</h2>
+						<p>靠右 - class="timeline-inverted"</p>
+						<pre><code>
+<li class="timeline-inverted">
+    <div class="timeline-image">
+        <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+    </div>
+    <div class="timeline-panel">
+        <div class="timeline-heading">
+            <h4>March 2011</h4>
+            <h4 class="subheading">An Agency is Born</h4>
+        </div>
+        <div class="timeline-body">
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+        </div>
+    </div>
+</li>
+						</code></pre>
+					</section>
+					<section>
+						<h2>動手時間</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>團隊成員修改</h2>
+						<img src="images/team.png" alt="">
+					</section>
+					<section>
+						<h2>講個祕訣</h2>
+						<p>用 facebook API 去抓成員的圖片，這樣就不用更新了。</p>
+						<pre><code>
+http://graph.facebook.com/{username}/picture?width=300&height=300
+						</code></pre>
+					</section>
+					<section>
+						<h2>超連結在新視窗開啟</h2>
+						<p>防止讓使用者就這樣離開你的網頁了</p>
+						<p>target=_blank</p>
+						<pre><code>
+<ul class="list-inline social-buttons">
+    <li><a target="_blank" href="http://fb.me/tzusheng"><i class="fa fa-facebook"></i></a>
+    </li>
+</ul>
+						</code></pre>
+					</section>
+					<section>
+						<h2>動手時間</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>用 Google Form 收訊息</h2>
+						<img src="images/contact.png" alt="">
+					</section>
+					<section>
+						<h2>一定要有後端才能存訊息</h2>
+						<p>那就用 Google 表單當後端吧</p>
+						<p>不過這邊會需要一點 JavaScript</p>	
+					</section>
+					<section>
+						<h2>首先先做一個表單</h2>
+						<img style="width: 80%" src="images/google-form.png" alt="">
+					</section>
+					<section>
+						<h2>到你的表單頁面</h2>
+						<p>然後打開 Developer Tools<br>（Command + Option + I, F12）</p>
+						<img src="images/form-element.png" alt="">
+						<p>找到 form 標籤，把 action 位址記下來。</p>
+					</section>
+					<section>
+						<h2>把每個表單的 id 也記下來</h2>
+						<img src="images/input-entry.png" alt="">
+						<p>entry_188... 這個，每題的 id 都記下來。</p>
+					</section>
+					<section>
+						<h2>修改 contact_me.js</h2>
+						<img src="images/import-js.png" alt="">
+						<p>移除 contact_me.js 的引入</p>
+					</section>
+					<section>
+						<h2>把內容複製出來</h2>
+						<p>寫在 &ltscript&gt&lt/script&gt 之間</p>
+						<img src="images/contact-script.png" alt="">
+					</section>
+					<section>
+						<h2>修改 Ajax 網址及參數</h2>
+						<p>url, data 參數, 傳送成功函示修改</p>
+						<pre><code>
+$.ajax({
+    url: "https://docs.google.com/forms/d/19CjYWDf-7NxRgVA-b161yVaGIvY_1na8FKzOFNjYduk/formResponse",
+    type: "POST",
+    dataType: "xml",
+    data: {
+        entry_18897851: name,
+        entry_1885173539: phone,
+        entry_1305018232: email,
+        entry_1893396168: message
+    },
+    cache: false,
+    statusCode: {
+        0: function() {
+            // Success message
+            $('#success').html("<div class='alert alert-success'>");
+            $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+            $('#success > .alert-success')
+                .append("<strong>Your message has been sent. </strong>");
+            $('#success > .alert-success')
+                .append('</div>');
+
+            //clear all fields
+            $('#contactForm').trigger("reset");
+        },
+        200: function() {
+            // Success message
+            $('#success').html("<div class='alert alert-success'>");
+            $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+            $('#success > .alert-success')
+                .append("<strong>Your message has been sent. </strong>");
+            $('#success > .alert-success')
+                .append('</div>');
+
+            //clear all fields
+            $('#contactForm').trigger("reset");
+        }
     }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+})
+						</code></pre>
+					</section>
+					<section>
+						<h2>確認 Google 表單收到</h2>
+						<img src="images/form-response.png" alt="">
+					</section>
+					<section>
+						<h2>設定表單通知</h2>
+						<p>工具 -&gt 通知規則</p>
+						<p>有人填表你就收到信了</p>
+						<img style="width: 80%" src="images/email-notify.png" alt="">
+					</section>
+					<section>
+						<h2>動手時間</h2>
+					</section>
 				</section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<section>
+						<h2>One More Thing</h2>
+					</section>
+					<section></section>
+					<section></section>
+					<section></section>
+					<section></section>
 				</section>
 
 			</div>
